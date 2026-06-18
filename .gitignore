@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment Variables
+.env
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python Build Files
+build/
+dist/
+*.egg-info/
+
+# ChromaDB Vector Store
+Chroma_store/
+
+# SQLite Databases (optional)
+*.db
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Cache
+.cache/
+.pytest_cache/
+
+# Hugging Face Cache
+.huggingface/
+hf_cache/
+
+# LangChain Cache
+.langchain/
+
+# Coverage Reports
+.coverage
+htmlcov/
+
+# Local Configuration
+.env.local
+.env.development
+
+# Streamlit (if added later)
+.streamlit/secrets.toml
