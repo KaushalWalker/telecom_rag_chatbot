@@ -1,5 +1,6 @@
 import os
 import streamlit as st
+import requests, zipfile, io
 from rag_chain import build_chain
 
 # ── Environment Setup ────────────────────────────────────────────────────────
@@ -28,6 +29,11 @@ st.set_page_config(
 # ── Cache Chain ──────────────────────────────────────────────────────────────
 @st.cache_resource
 def get_chain():
+    # If you want to preload your Chroma store from GitHub release:
+    url = st.secrets["github"]["chroma_store_url"]
+    response = requests.get(url)
+    with zipfile.ZipFile(io.BytesIO(response.content)) as zip_ref:
+        zip_ref.extractall("chroma_store")
     return build_chain()
 
 # ── Session State Initialization ─────────────────────────────────────────────
