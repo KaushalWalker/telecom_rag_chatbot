@@ -8,6 +8,7 @@ Merged retriever across Chroma collections:
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.runnables import RunnableLambda
+from chroma_db import ensure_chroma_db
 
 # ── Config ───────────────────────────────────────────────────────────────────
 CHROMA_DIR = "Chroma_store"
