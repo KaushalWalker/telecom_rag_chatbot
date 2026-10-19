@@ -4,7 +4,7 @@ os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 import streamlit as st
 from rag_chain import build_chain
 
-api_key = st.secrets["OPENAI_API_KEY"]
+api_key = st.secrets["GROQ_API_KEY"]
 
 SAMPLE_QUESTIONS = [
     "Why is my mobile internet so slow?",
