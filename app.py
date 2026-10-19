@@ -2,10 +2,9 @@ import os
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 
 import streamlit as st
-from dotenv import load_dotenv
 from rag_chain import build_chain
 
-load_dotenv()
+api_key = st.secrets["OPENAI_API_KEY"]
 
 SAMPLE_QUESTIONS = [
     "Why is my mobile internet so slow?",
