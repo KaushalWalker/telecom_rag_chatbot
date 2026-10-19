@@ -35,7 +35,7 @@ if "pending_question" not in st.session_state:
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.title("📡 Telecom Support")
-    st.caption("Powered by RAG · Qwen3-32B on Groq")
+    st.caption("Powered by RAG · openai/gpt-oss-120b")
     st.divider()
 
     st.markdown("**Sample questions**")
